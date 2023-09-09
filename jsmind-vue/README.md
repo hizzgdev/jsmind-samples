@@ -33,9 +33,10 @@ Create a new component and add to `App`
             }
         },
         mounted() {
-            let options = this.jsmind_options;
-            options.container = this.$refs.jsmind_container;
-            let jm = new jsMind(this.jsmind_options);
+            let options = Object.assign(this.jsmind_options, {
+                container: this.$refs.jsmind_container
+            })
+            let jm = new jsMind(options);
             jm.show(this.jsmind_data);
         }
     }
