@@ -7,37 +7,37 @@ This is a sample of how to use jsmind in a simple HTML file.
 Option 1: use CDN jsDeliver
 
 ```html
-<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/jsmind@0.7.1/style/jsmind.css"/>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/jsmind@0.7.5/style/jsmind.css"/>
 
-<script src="//cdn.jsdelivr.net/npm/jsmind@0.7.1/es6/jsmind.js"></script>
-<script src="//cdn.jsdelivr.net/npm/jsmind@0.7.1/es6/jsmind.draggable-node.js"></script>
+<script src="//cdn.jsdelivr.net/npm/jsmind@0.7.5/es6/jsmind.js"></script>
+<script src="//cdn.jsdelivr.net/npm/jsmind@0.7.5/es6/jsmind.draggable-node.js"></script>
 ```
 
 Option 2: use CDN UNPKG
 
 ```html
-<link type="text/css" rel="stylesheet" href="//unpkg.com/jsmind@0.7.1/style/jsmind.css"/>
+<link type="text/css" rel="stylesheet" href="//unpkg.com/jsmind@0.7.5/style/jsmind.css"/>
 
-<script src="//unpkg.com/jsmind@0.7.1/es6/jsmind.js"></script>
-<script src="//unpkg.com/npm/jsmind@0.7.1/es6/jsmind.draggable-node.js"></script>
+<script src="//unpkg.com/jsmind@0.7.5/es6/jsmind.js"></script>
+<script src="//unpkg.com/npm/jsmind@0.7.5/es6/jsmind.draggable-node.js"></script>
 ```
 
 Option 3 for China: use mirror of CDN jsDeliver in China
 
 ```html
-<link type="text/css" rel="stylesheet" href="//jsd.onmicrosoft.cn/npm/jsmind@0.7.1/style/jsmind.css"/>
+<link type="text/css" rel="stylesheet" href="//jsd.onmicrosoft.cn/npm/jsmind@0.7.5/style/jsmind.css"/>
 
-<script src="//jsd.onmicrosoft.cn/npm/jsmind@0.7.1/es6/jsmind.js"></script>
-<script src="//jsd.onmicrosoft.cn/npm/jsmind@0.7.1/es6/jsmind.draggable-node.js"></script>
+<script src="//jsd.onmicrosoft.cn/npm/jsmind@0.7.5/es6/jsmind.js"></script>
+<script src="//jsd.onmicrosoft.cn/npm/jsmind@0.7.5/es6/jsmind.draggable-node.js"></script>
 ```
 
 Option 4: download the files from CDN, and reference local resource
 
 ```html
-<link type="text/css" rel="stylesheet" href="<filePath>/jsmind@0.7.1/style/jsmind.css"/>
+<link type="text/css" rel="stylesheet" href="<filePath>/jsmind@0.7.5/style/jsmind.css"/>
 
-<script src="<filePath>/jsmind@0.7.1/es6/jsmind.js"></script>
-<script src="<filePath>/jsmind@0.7.1/es6/jsmind.draggable-node.js"></script>
+<script src="<filePath>/jsmind@0.7.5/es6/jsmind.js"></script>
+<script src="<filePath>/jsmind@0.7.5/es6/jsmind.draggable-node.js"></script>
 ```
 
 ## Write scripts in the HTML file
