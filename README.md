@@ -8,4 +8,4 @@ Samples for jsmind
 
 Use Case
 
-- WIP
+- [Mathjax: Math, Tex etc.](./jsmind-use-cases/jsmind-mathjax.html)

@@ -4,8 +4,6 @@ This is a sample of how to use jsmind in your vue project.
 
 ## Install jsMind
 
-jsmind@0.7.5 or later versions
-
 ```bash
 npm install jsmind
 ```

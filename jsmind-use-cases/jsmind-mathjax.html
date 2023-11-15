@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jsMind</title>
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/jsmind@0.7.6/style/jsmind.css" />
+    <style type="text/css">
+        #jsmind_container {
+            width: 800px;
+            height: 500px;
+            border: solid 1px #ccc;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    https://www.mathjax.org/
+    <div id="jsmind_container"></div>
+    <script src="//unpkg.com/jsmind@0.7.6/es6/jsmind.js"></script>
+    <script src="//unpkg.com/jsmind@0.7.6/es6/jsmind.draggable-node.js"></script>
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" src="//unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+
+    <script type="text/javascript">
+        const mind_data = {
+            meta: {
+                name: 'jsMind MathJax',
+                author: 'hizzgdev@163.com',
+                version: '0.7.6',
+            },
+            format: 'node_tree',
+            data: {
+                id: 'root',
+                topic: 'jsMind - MathJax',
+                children: [
+                    {
+                        id: 'latex-1',
+                        topic: '$$x ={-b \\pm \\sqrt{b^2-4ac}\\over 2a}$$',
+                        direction: 'left'
+                    },
+                    {
+                        id: 'latex-2',
+                        topic: '$$\\frac{\\mathrm{d}}{\\mathrm{d}x}\\sin x=\\cos x$$',
+                        direction: 'right'
+                    },
+                    {
+                        id: 'powerful',
+                        topic: '$$\\begin{pmatrix}  a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\  a_{31} & a_{32} & a_{33}  \\end{pmatrix} $$',
+                        direction: 'right'
+                    },
+                    {
+                        id: 'other',
+                        topic: '$$y(t) = A \\cos ( \\frac{{2 \\pi {x}}}{ \\lambda } +  \\varphi ) $$',
+                        direction: 'left'
+                    },
+                ],
+            },
+        }
+        function mathJax_render(jm, ele, node) {
+            const found = node.topic.match(/\$\$(?<latex>.*)\$\$/);
+            if (!!found) {
+                while (ele.firstChild) {
+                    ele.removeChild(ele.firstChild);
+                }
+                ele.appendChild(MathJax.tex2chtml(found.groups.latex, { display: false }));
+                MathJax.typeset([ele]);
+                return true;
+            }
+            return false;
+        }
+        function load_jsmind() {
+            var options = {
+                container: 'jsmind_container',
+                editable: true,
+                theme: 'primary',
+                view: {
+                    custom_node_render: mathJax_render
+                }
+            };
+            var jm = new jsMind(options);
+            jm.show(mind_data);
+        }
+        load_jsmind();
+    </script>
+</body>
+
+</html>
