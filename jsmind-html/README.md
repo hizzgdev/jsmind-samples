@@ -4,7 +4,7 @@ This is a sample of how to use jsmind in a simple HTML file.
 
 ## Install jsMind
 
-Option 1: use CDN jsDeliver
+Option 1: use CDN jsDeliver [[sample](./jsmind-jsdelivr.html)]
 
 ```html
 <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/jsmind@0.7.5/style/jsmind.css"/>
@@ -13,7 +13,7 @@ Option 1: use CDN jsDeliver
 <script src="//cdn.jsdelivr.net/npm/jsmind@0.7.5/es6/jsmind.draggable-node.js"></script>
 ```
 
-Option 2: use CDN UNPKG
+Option 2: use CDN UNPKG [[sample](./jsmind-unpkg.html)]
 
 ```html
 <link type="text/css" rel="stylesheet" href="//unpkg.com/jsmind@0.7.5/style/jsmind.css"/>
@@ -22,7 +22,7 @@ Option 2: use CDN UNPKG
 <script src="//unpkg.com/npm/jsmind@0.7.5/es6/jsmind.draggable-node.js"></script>
 ```
 
-Option 3 for China: use mirror of CDN jsDeliver in China
+Option 3 for China: use China mirror of jsDeliver [[sample](./jsmind-jsdeliver-cn-mirror.html)]
 
 ```html
 <link type="text/css" rel="stylesheet" href="//jsd.onmicrosoft.cn/npm/jsmind@0.7.5/style/jsmind.css"/>
