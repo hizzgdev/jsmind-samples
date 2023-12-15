@@ -15,7 +15,7 @@ export default {
                 meta: {
                     name: 'jsMind sample',
                     author: 'hizzgdev@163.com',
-                    version: '0.7.6',
+                    version: '0.7.9',
                 },
                 format: 'node_tree',
                 data: {
