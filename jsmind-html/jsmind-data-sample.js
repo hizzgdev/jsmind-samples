@@ -3,7 +3,7 @@ var JSMIND_DATA_SAMPLE =  {
     meta: {
         name: 'jsMind sample',
         author: 'hizzgdev@163.com',
-        version: '0.8.0',
+        version: '0.8.1',
     },
     format: 'node_tree',
     data: {

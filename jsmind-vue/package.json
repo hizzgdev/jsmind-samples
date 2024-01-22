@@ -9,7 +9,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "jsmind": "^0.8.0",
+        "jsmind": "^0.8.1",
         "vue": "^3.3.4"
     },
     "devDependencies": {
